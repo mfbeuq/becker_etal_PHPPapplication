@@ -1,8 +1,18 @@
 ---
 title: "Combined trial figures"
-output: html_document
+author: "Maximilian Fernando Becker"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
 ---
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      results = "hide", 
+                      eval = FALSE)
+```
 
 # Bacterial community analysis
 ### **Becker *et al.* "Plant health protecting product application"**
@@ -11,17 +21,10 @@ output: html_document
   
 This document contains all statistical analyses conducted for the manuscript. Note that due to the random iterative nature of some analyses (such as PERMANOVA, CAP & PCA) some of the figure parameters will change slightly during reanalysis, though core results will remain essentially unchanged. 
 
-All data to reproduce analysis can be found here: `https://github.com/mfbeuq/becker_etal_abovegroundpathogen`
+All data to reproduce analysis can be found here: `https://github.com/mfbeuq/becker_etal_PHPPapplication`
 
 -----------------
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, 
-                      results = "hide", 
-                      eval = FALSE)
-```
-
-  
 ### Load necessary ecological analysis libraries. 
 
 ```{r,message=FALSE}

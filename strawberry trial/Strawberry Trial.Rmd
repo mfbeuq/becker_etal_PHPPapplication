@@ -2,7 +2,9 @@
 title: "Strawberry Trial"
 author: "Maximilian Fernando Becker"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 
@@ -12,11 +14,14 @@ knitr::opts_chunk$set(echo = TRUE,
                       eval = FALSE)
 ```
 
+# Bacterial community analysis
+### **Becker *et al.* "Plant health protecting product application"**
+
 -----------------
   
 This document contains all statistical analyses conducted for the manuscript. Note that due to the random iterative nature of some analyses (such as PERMANOVA, CAP & PCA) some of the figure parameters will change slightly during reanalysis, though core results will remain essentially unchanged. 
 
-All data to reproduce analysis can be found here: `https://github.com/mfbeuq/becker_etal_abovegroundpathogen`
+All data to reproduce analysis can be found here: `https://github.com/mfbeuq/becker_etal_PHPPapplication`
 
 -----------------
   
